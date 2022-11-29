@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.home.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/green_primary">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_notifications_24"
+                    android:layout_gravity="end"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello Alif Akbar"
+                    android:textColor="@color/white"
+                    app:fontFamily="@font/inter_bold"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's start your day. Cheer up!"
+                    android:textColor="@color/white"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_marginTop="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Connect with Registered College Account"
+                            android:textSize="18sp"
+                            app:fontFamily="@font/inter_bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hero_card_subtitle"
+                            android:layout_marginTop="6dp"
+                            android:textSize="14sp"
+                            app:fontFamily="@font/inter_medium"
+                            android:textColor="@color/grey"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="24dp">
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Later"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="@color/green_primary"
+                                app:fontFamily="@font/inter_semibold"/>
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Connect"
+                                app:fontFamily="@font/inter_semibold"
+                                android:padding="0dp"
+                                android:includeFontPadding="false"
+                                android:layout_gravity="end"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Helpdesk EdLink"
+                        android:layout_gravity="center_vertical"
+                        app:fontFamily="@font/inter_semibold"
+                        android:textSize="20sp"/>
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:textSize="10sp"
+                        app:icon="@drawable/ic_arrow_right"
+                        app:iconGravity="textEnd"
+                        android:backgroundTint="@color/green_light"
+                        android:textColor="@color/green_primary"
+                        app:fontFamily="@font/inter_semibold"
+                        app:iconTint="@color/green_primary"/>
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="230dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/img_card_helpdesk"
+                                    android:scaleType="fitXY"/>
+
+                                <LinearLayout
+                                    android:background="@color/white"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Release Aplikasi EdLink"
+                                        android:textSize="16sp"
+                                        app:fontFamily="@font/inter_medium"/>
+                                    <TextView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Halo, Ini adalah aplikasi EdLink"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/inter_regular"
+                                        android:textColor="@color/grey"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="230dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/img_card_helpdesk"
+                                    android:scaleType="fitXY"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Release Aplikasi EdLink"
+                                        android:textSize="16sp"
+                                        app:fontFamily="@font/inter_medium"/>
+                                    <TextView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Halo, Ini adalah aplikasi EdLink"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/inter_regular"
+                                        android:textColor="@color/grey"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_width="230dp"
+                                    android:layout_height="150dp"
+                                    android:src="@drawable/img_card_helpdesk"
+                                    android:scaleType="fitXY"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:orientation="vertical"
+                                    android:background="@color/white"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Release Aplikasi EdLink"
+                                        android:textSize="16sp"
+                                        app:fontFamily="@font/inter_medium"/>
+                                    <TextView
+                                        android:layout_marginTop="6dp"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Halo, Ini adalah aplikasi EdLink"
+                                        android:textSize="12sp"
+                                        app:fontFamily="@font/inter_regular"
+                                        android:textColor="@color/grey"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EdLink News"
+                    android:layout_gravity="center_vertical"
+                    app:fontFamily="@font/inter_semibold"
+                    android:textSize="20sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hero_card_subtitle"
+                    android:layout_marginTop="6dp"
+                    android:textSize="14sp"
+                    app:fontFamily="Discover good news, stories about education world"
+                    android:textColor="@color/grey"/>
+                <HorizontalScrollView
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_news_1"
+                                android:scaleType="centerCrop"/>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/layer"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_marginTop="8dp"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cangghinya Kereta Cepat Jakarta Bandung, Penumpang Tak Perlu"
+                                        android:layout_gravity="center_vertical"
+                                        app:fontFamily="@font/inter_semibold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hero_card_subtitle"
+                                        android:layout_marginTop="6dp"
+                                        android:textSize="14sp"
+                                        app:fontFamily="Good News From Indonesia - Konstruksi kereta cepat"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:text="Read More"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_news_1"
+                                android:scaleType="centerCrop"/>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/layer"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_marginTop="8dp"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cangghinya Kereta Cepat Jakarta Bandung, Penumpang Tak Perlu"
+                                        android:layout_gravity="center_vertical"
+                                        app:fontFamily="@font/inter_semibold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hero_card_subtitle"
+                                        android:layout_marginTop="6dp"
+                                        android:textSize="14sp"
+                                        app:fontFamily="Good News From Indonesia - Konstruksi kereta cepat"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:text="Read More"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:clickable="true"
+                            style="@style/Widget.Material3.CardView.Outlined"
+                            android:layout_width="280dp"
+                            android:layout_height="280dp"
+                            app:strokeColor="@color/grey"
+                            app:strokeWidth="0.1dp"
+                            android:layout_marginRight="12dp">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/img_news_1"
+                                android:scaleType="centerCrop"/>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/layer"/>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    android:orientation="vertical"
+                                    android:padding="16dp">
+                                    <TextView
+                                        android:layout_marginTop="8dp"
+                                        android:layout_weight="1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cangghinya Kereta Cepat Jakarta Bandung, Penumpang Tak Perlu"
+                                        android:layout_gravity="center_vertical"
+                                        app:fontFamily="@font/inter_semibold"
+                                        android:textSize="20sp"
+                                        android:textColor="@color/white"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/hero_card_subtitle"
+                                        android:layout_marginTop="6dp"
+                                        android:textSize="14sp"
+                                        app:fontFamily="Good News From Indonesia - Konstruksi kereta cepat"
+                                        android:textColor="@color/white"/>
+                                </LinearLayout>
+                                <com.google.android.material.button.MaterialButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginBottom="24dp"
+                                    android:text="Read More"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginVertical="24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover All News"
+                    android:textSize="10sp"
+                    app:icon="@drawable/ic_arrow_right"
+                    app:iconGravity="textEnd"
+                    android:backgroundTint="@color/green_light"
+                    android:textColor="@color/green_primary"
+                    app:fontFamily="@font/inter_semibold"
+                    app:iconTint="@color/green_primary"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+</ScrollView>

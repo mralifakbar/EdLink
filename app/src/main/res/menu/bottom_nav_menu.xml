@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_selector"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/ic_rocket_selector"
+        android:title="Explore"/>
+
+    <item
+        android:id="@+id/navigation_class"
+        android:icon="@drawable/ic_class_selector"
+        android:title="Class Room"/>
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_chat_selector"
+        android:title="Chat"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_person_selector"
+        android:title="Account"/>
+</menu>

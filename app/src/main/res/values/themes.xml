@@ -56,4 +56,9 @@
         <item name="android:layout_gravity">center_vertical</item>
         <item name="android:gravity">center_vertical</item>
     </style>
+
+    <style name="ButtomBarIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#41EC3E</item>
+        <item name="android:height">50dp</item>
+    </style>
 </resources>
