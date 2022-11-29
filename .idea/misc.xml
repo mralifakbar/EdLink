@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_login.xml" value="0.5" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_login_siakad.xml" value="0.33" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_splash_middle.xml" value="0.33" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_splash_screen.xml" value="0.21693840579710144" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_image_slider.xml" value="0.21693840579710144" />

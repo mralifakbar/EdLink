@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ui.auth.LoginActivity">
+    tools:context=".ui.auth.LoginSiakadActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -16,11 +16,12 @@
             android:id="@+id/back_btn"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Login"
+            app:title="Sign In with Siakad Account"
             app:navigationIcon="@drawable/ic_arrow_left"
             app:navigationIconTint="@color/blue"
             app:titleTextColor="@color/blue"/>
     </com.google.android.material.appbar.AppBarLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,23 +30,47 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email Address"
+            android:text="University / Campus Name"
             android:textColor="@color/blue"
             app:fontFamily="@font/inter_bold"
             android:textSize="16sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/til_email"
+            android:id="@+id/til_campus"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example: Universitas Lampung">
+
+            <AutoCompleteTextView
+                android:id="@+id/act_campus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:padding="17dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address"
+            android:textColor="@color/blue"
+            app:fontFamily="@font/inter_bold"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_npm"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter Email Address">
+            android:hint="Enter your ID (NIM / NID)">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edt_email"
+                android:id="@+id/edt_npm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -73,21 +98,9 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:text="Forgot Password"
-            android:textColor="@color/green_primary"
-            android:paddingHorizontal="10dp"
-            android:layout_gravity="end"
-            android:textSize="14sp"
-            android:layout_margin="0dp"
-            android:paddingLeft="8dp"
-            app:fontFamily="@font/inter_bold"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_login"
+            android:id="@+id/login"
             android:padding="15dp"
+            android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
@@ -100,33 +113,6 @@
             app:iconGravity="start"
             app:fontFamily="@font/inter_bold"/>
 
-        <LinearLayout
-            android:id="@+id/btn_regis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_gravity="center">
-            <TextView
-                android:textSize="14sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Don't have account yet?"
-                android:textColor="@color/grey"
-                android:gravity="center"
-                android:layout_marginRight="10dp"/>
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/to_register"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/Widget.Material3.Button.TextButton"
-                android:text="Register Now"
-                android:textColor="@color/green_primary"
-                android:textSize="14sp"
-                android:layout_margin="0dp"
-                android:paddingLeft="8dp"
-                app:fontFamily="@font/inter_semibold"/>
-        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
