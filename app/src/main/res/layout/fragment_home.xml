@@ -26,10 +26,11 @@
                     app:tint="@color/white" />
 
                 <TextView
+                    android:id="@+id/hello_user"
                     android:layout_marginTop="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hello Alif Akbar"
+                    android:text="Hello User"
                     android:textColor="@color/white"
                     app:fontFamily="@font/inter_bold"
                     android:textSize="20sp"/>

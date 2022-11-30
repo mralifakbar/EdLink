@@ -14,14 +14,18 @@ import com.google.firebase.ktx.Firebase
 import id.mralifakbar.edlink.MainActivity
 import id.mralifakbar.edlink.R
 import id.mralifakbar.edlink.databinding.ActivityRegisterBinding
+import id.mralifakbar.edlink.utils.Preferences
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
+    private lateinit var preferences: Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        preferences = Preferences(this)
 
         binding.apply {
             backBtn.setOnClickListener {
@@ -87,6 +91,8 @@ class RegisterActivity : AppCompatActivity() {
                         OnCompleteListener<AuthResult> { task ->
                             if (task.isSuccessful) {
                                 val newUser: FirebaseUser = task.result!!.user!!
+
+                                preferences.setValues("login_status", "1")
 
                                 Snackbar.make(
                                     binding.root,

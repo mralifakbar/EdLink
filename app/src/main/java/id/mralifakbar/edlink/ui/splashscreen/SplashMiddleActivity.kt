@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentTransaction
+import com.google.android.material.snackbar.Snackbar
 import id.mralifakbar.edlink.MainActivity
 import id.mralifakbar.edlink.R
 import id.mralifakbar.edlink.databinding.ActivitySplashMiddleBinding
@@ -22,7 +23,7 @@ class SplashMiddleActivity : AppCompatActivity() {
 
         preferences = Preferences(this)
 
-        if (preferences.getValues("login_status").equals("1")){
+        if (preferences.getValues("login_status").equals("1")) {
             val moveToMain = Intent(this@SplashMiddleActivity, MainActivity::class.java)
             startActivity(moveToMain)
             finish()
@@ -34,13 +35,19 @@ class SplashMiddleActivity : AppCompatActivity() {
             }
 
             loginWithSiakad.setOnClickListener {
-                startActivity(Intent(this@SplashMiddleActivity, LoginSiakadActivity::class.java))
+                startActivity(
+                    Intent(
+                        this@SplashMiddleActivity,
+                        LoginSiakadActivity::class.java
+                    )
+                )
             }
 
             toRegister.setOnClickListener {
                 startActivity(Intent(this@SplashMiddleActivity, RegisterActivity::class.java))
             }
         }
-
     }
 }
+
+

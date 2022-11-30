@@ -39,6 +39,9 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(Intent(this@LoginActivity, RegisterActivity::class.java))
             }
 
+            backBtn.setOnClickListener {
+                finish()
+            }
             btnLogin.setOnClickListener {
                 when {
                     TextUtils.isEmpty(edtEmail.text.toString().trim() {it <= ' '}) -> {
