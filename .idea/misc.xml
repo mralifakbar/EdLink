@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CODING/EdLink/app/src/main/res/drawable/ic_arrow_left.xml" value="0.2625" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/drawable/ic_arrow_right.xml" value="0.2625" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/drawable/ic_chat_active.xml" value="0.2625" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/drawable/ic_chat_selector.xml" value="0.2625" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/drawable/ic_chat_xactive.xml" value="0.2625" />
@@ -26,7 +28,10 @@
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_splash_middle.xml" value="0.33" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/activity_splash_screen.xml" value="0.21693840579710144" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_account.xml" value="0.2" />
-        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_classroom.xml" value="0.21693840579710144" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_class_academic.xml" value="0.21693840579710144" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_class_general.xml" value="0.21693840579710144" />
+        <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_classroom.xml" value="0.33" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_explore.xml" value="0.21693840579710144" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_home.xml" value="0.5" />
         <entry key="..\:/CODING/EdLink/app/src/main/res/layout/fragment_image_slider.xml" value="0.21693840579710144" />

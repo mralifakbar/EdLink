@@ -61,4 +61,9 @@
         <item name="android:color">#41EC3E</item>
         <item name="android:height">50dp</item>
     </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
 </resources>

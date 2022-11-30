@@ -4,4 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="termsandprivacy"><![CDATA[I\'ve agreeed to the Terms & Conditions and Privacy Policy]]></string>
     <string name="hero_card_subtitle">Get lecture support features and the latest info from your campus</string>
+
+    <string name="tabs_1">Academic</string>
+    <string name="tabs_2">General</string>
 </resources>

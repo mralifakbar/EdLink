@@ -175,8 +175,7 @@
                     android:layout_height="wrap_content"
                     android:text="Already have an account?"
                     android:textColor="@color/grey"
-                    android:gravity="center"
-                    android:layout_marginRight="10dp"/>
+                    android:gravity="center"/>
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/to_login"
@@ -186,8 +185,9 @@
                     android:text="Sign In"
                     android:textColor="@color/green_primary"
                     android:textSize="14sp"
+                    android:padding="0dp"
+                    android:includeFontPadding="false"
                     android:layout_margin="0dp"
-                    android:paddingLeft="8dp"
                     app:fontFamily="@font/inter_semibold"/>
             </LinearLayout>
         </LinearLayout>
