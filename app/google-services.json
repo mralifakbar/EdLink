@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "975654625093",
+    "project_id": "edlink-fdeb7",
+    "storage_bucket": "edlink-fdeb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975654625093:android:4b8b170ea2b40ac91ca82c",
+        "android_client_info": {
+          "package_name": "id.mralifakbar.edlink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "975654625093-u7d5ddssmphd4lot9mov4hbfjdqbhdh0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH6MJi6ck2L8LQJxIvNfTC6uUmWumr_tw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "975654625093-u7d5ddssmphd4lot9mov4hbfjdqbhdh0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

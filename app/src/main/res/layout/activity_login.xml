@@ -95,8 +95,6 @@
             android:fontFamily="@font/inter_bold"
             android:textSize="15sp"
             app:iconSize="20sp"
-            android:backgroundTint="@color/grey_100"
-            android:textColor="@color/grey"
             app:iconGravity="start"
             app:fontFamily="@font/inter_bold"/>
 

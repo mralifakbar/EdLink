@@ -17,7 +17,7 @@
         android:background="@color/white">
         <com.google.android.material.appbar.MaterialToolbar
             app:titleTextAppearance="@style/ToolBarrTextAppereance"
-            android:id="@+id/back_btn"
+            android:id="@+id/search_btn"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:title="Classes"

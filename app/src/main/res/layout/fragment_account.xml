@@ -279,6 +279,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_logout"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

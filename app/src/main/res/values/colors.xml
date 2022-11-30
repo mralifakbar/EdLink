@@ -14,5 +14,6 @@
     <color name="grey">#FF636e72</color>
     <color name="grey_200">#FFb2bec3</color>
     <color name="grey_100">#FFe0e0e0</color>
-
+    <color name="red">#ffe74c3c</color>
+    <color name="orange">#ffffa502</color>
 </resources>
